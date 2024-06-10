@@ -1,25 +1,36 @@
-import Header from "./components/Header/Header";
-import About from "./components/about/About";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import Contact from "./components/Contact/Contact";
+import React, { useState, useEffect, Suspense } from "react";
+
 import Footer from "./components/Footer/Footer";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+import { projects } from "./portfolio";
+import uniqid from "uniqid";
 import "./App.css";
 
 const App = () => {
+  const [routes, setRoutes] = useState([]);
+
+  const mapRoutes = (p) => (
+    <Route key={uniqid()} path={p.path} element={<p.component />} />
+  );
+
+  useEffect(() => {
+    const mappedRoutes = projects.map(mapRoutes);
+
+    setRoutes(mappedRoutes);
+  }, []);
+
   return (
     <div id="top" className={`dark app`}>
-      <Header />
-
       <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="" element={<Home />} />
+            {routes}
+          </Routes>
+        </Suspense>
       </main>
 
-      <ScrollToTop />
       <Footer />
     </div>
   );

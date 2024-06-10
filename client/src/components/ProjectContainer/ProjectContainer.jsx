@@ -1,43 +1,41 @@
 import uniqid from "uniqid";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LaunchIcon from "@material-ui/icons/Launch";
+import { useNavigate } from "react-router-dom";
 import "./projectContainer.css";
 
-const ProjectContainer = ({ project }) => (
-  <div className="project">
-    <h3>{project.name}</h3>
+const ProjectContainer = ({ project }) => {
+  const navigate = useNavigate();
 
-    <p className="project__description">{project.description}</p>
-    {project.stack && (
-      <ul className="project__stack">
-        {project.stack.map((item) => (
-          <li key={uniqid()} className="project__stack-item">
-            {item}
-          </li>
-        ))}
-      </ul>
-    )}
+  const goToProject = () => {
+    navigate(project.path);
+  };
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label="source code"
-        className="link link--icon"
-      >
-        <GitHubIcon />
-      </a>
-    )}
+  return (
+    <div className="project" onClick={goToProject}>
+      <h3>{project.name}</h3>
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label="live preview"
-        className="link link--icon"
-      >
-        <LaunchIcon />
-      </a>
-    )}
-  </div>
-);
+      <p className="project__description">{project.description}</p>
+      {project.stack && (
+        <ul className="project__stack">
+          {project.stack.map((item) => (
+            <li key={uniqid()} className="project__stack-item">
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          aria-label="source code"
+          className="link link--icon"
+        >
+          <GitHubIcon />
+        </a>
+      )}
+    </div>
+  );
+};
 
 export default ProjectContainer;
