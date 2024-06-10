@@ -22,5 +22,10 @@
 /client/yarn-debug.log*
 /client/yarn-error.log*
 
+# Ignore .vs directory
+/server/.vs
+/client/.vs
+
+# Ignore bin and obj directories
+/server/bin
 /server/obj
-/server/.vs/dotnet
