@@ -20,8 +20,6 @@ const projects = [
 ];
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
   "HTML",
   "CSS",
   "JavaScript",
@@ -37,7 +35,6 @@ const skills = [
 ];
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: "johnsmith@mail.com",
 };
 

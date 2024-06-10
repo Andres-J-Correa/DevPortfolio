@@ -43,3 +43,78 @@
   font-size: 50px;
   margin-bottom: 8px;
 }
+
+.new-interview__root {
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.new-interview__header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.new-interview__chatbox {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.new-interview__message {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.new-interview__message--user {
+  justify-content: flex-end;
+}
+
+.new-interview__message--ai {
+  justify-content: flex-start;
+}
+
+.new-interview__message-box {
+  max-width: 60%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.new-interview__message-box--user {
+  background-color: #3f51b5;
+}
+
+.new-interview__message-box--ai {
+  background-color: #f50057;
+}
+
+.new-interview__input {
+  display: flex;
+}
+
+.new-interview__input textarea {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-interview__input button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border: none;
+  background-color: #3f51b5;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-interview__input button:hover {
+  background-color: #303f9f;
+}

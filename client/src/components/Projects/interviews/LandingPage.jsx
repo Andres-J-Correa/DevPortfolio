@@ -14,8 +14,8 @@ const Interviews = () => {
     { text: "SQL", icon: <StorageIcon className="interviews__icon" /> },
   ];
 
-  const handleBoxClick = (topic) => {
-    navigate("new", { state: topic.text });
+  const handleBoxClick = (topic) => () => {
+    navigate("new", { state: topic });
   };
 
   return (
@@ -27,7 +27,7 @@ const Interviews = () => {
           <div
             key={index}
             className="interviews__topic"
-            onClick={() => handleBoxClick(topic.text)}
+            onClick={handleBoxClick(topic.text)}
             aria-label={topic.text}
             name={topic.text}
           >

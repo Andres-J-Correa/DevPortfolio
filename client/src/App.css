@@ -74,7 +74,8 @@ main {
 
 .link--nav {
   color: var(--clr-fg);
-  font-weight: 500;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .link--icon {
