@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9HytdjAONuBhOKssRbM9aqYkEoRM3xTQKgRpSFqlVuZb+Ez9gcjL1n271/SZ23nRLgHpUj13f7EVARTf/qQtkg==",
+  "dgSpecHash": "ZhogZKrsgNg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\DevPortfolio.csproj",
+  "projectFilePath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\DevPortfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andres\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

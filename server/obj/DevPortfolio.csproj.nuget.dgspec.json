@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\DevPortfolio.csproj": {}
+    "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\DevPortfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\DevPortfolio.csproj": {
+    "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\DevPortfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\DevPortfolio.csproj",
+        "projectUniqueName": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\DevPortfolio.csproj",
         "projectName": "DevPortfolio",
-        "projectPath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\DevPortfolio.csproj",
+        "projectPath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\DevPortfolio.csproj",
         "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\dotnet\\obj\\",
+        "outputPath": "C:\\Users\\Andres\\Desktop\\MyStuff\\Programming\\Website\\DevPortfolio\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
