@@ -1,8 +1,8 @@
-import React, { useState, useEffect, Suspense } from "react";
-
+import { useState, useEffect, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home";
-import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import { projects } from "./portfolio";
 import uniqid from "uniqid";
 import "./App.css";
@@ -22,6 +22,10 @@ const App = () => {
 
   return (
     <div id="top" className={`dark app`}>
+      <header className="header center">
+        <Navbar />
+      </header>
+
       <main>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
@@ -30,7 +34,6 @@ const App = () => {
           </Routes>
         </Suspense>
       </main>
-
       <Footer />
     </div>
   );

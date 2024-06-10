@@ -1,9 +1,8 @@
 import React from "react";
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: "Andres Correa",
-  role: "Full Stack Software Engineer",
+  role: "Full Stack Software Developer",
   resume: "https://example.com",
   social: {
     linkedin: "https://www.linkedin.com/in/andres-correa-7aa819244/",
@@ -13,13 +12,15 @@ const about = {
 
 const projects = [
   {
-    name: "Project 1",
+    name: "AI Code Interviews",
     description:
-      "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-    stack: ["SASS", "TypeScript", "React"],
+      "A tool for practicing coding interviews with real-time feedback and dynamic problem sets",
+    stack: ["CSS", "JavaScript", "React"],
     sourceCode: "https://github.com",
     path: "/interviews",
-    component: React.lazy(() => import("./components/Projects/Interviews")),
+    component: React.lazy(() =>
+      import("./components/Projects/interviews/Interviews")
+    ),
   },
 ];
 

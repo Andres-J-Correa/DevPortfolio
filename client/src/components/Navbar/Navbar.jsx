@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useLocation, Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { projects, skills, contact } from "../../portfolio";
@@ -6,6 +7,15 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false);
+
+  const location = useLocation();
+  const isHomePage = useMemo(
+    () => location.pathname === "/",
+    [location.pathname]
+  );
+  const hasProjects = useMemo(() => projects.length > 0, []);
+  const hasSkills = useMemo(() => skills.length > 0, []);
+  const hasContact = useMemo(() => Boolean(contact.email), []);
 
   const toggleNavList = () => setShowNavList(!showNavList);
 
@@ -15,7 +25,7 @@ const Navbar = () => {
         style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
       >
-        {projects.length ? (
+        {isHomePage && hasProjects && (
           <li className="nav__list-item">
             <a
               href="#projects"
@@ -25,9 +35,8 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-        ) : null}
-
-        {skills.length ? (
+        )}
+        {isHomePage && hasSkills && (
           <li className="nav__list-item">
             <a
               href="#skills"
@@ -37,9 +46,8 @@ const Navbar = () => {
               Skills
             </a>
           </li>
-        ) : null}
-
-        {contact.email ? (
+        )}
+        {isHomePage && hasContact && (
           <li className="nav__list-item">
             <a
               href="#contact"
@@ -49,7 +57,14 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-        ) : null}
+        )}
+        {!isHomePage && (
+          <li className="nav__list-item">
+            <Link to="/" className="link link--nav">
+              Home
+            </Link>
+          </li>
+        )}
       </ul>
 
       <button
