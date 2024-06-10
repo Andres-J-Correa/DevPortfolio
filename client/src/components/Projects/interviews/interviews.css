@@ -1,0 +1,45 @@
+.interviews__root {
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.interviews__header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.interviews__subtitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.interviews__grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  grid-gap: 1em;
+}
+
+.interviews__topic {
+  padding: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.interviews__topic:hover {
+  transform: translateY(-7px);
+}
+
+.interviews__icon {
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 8px;
+}

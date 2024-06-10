@@ -19,7 +19,7 @@ const projects = [
     sourceCode: "https://github.com",
     path: "/interviews",
     component: React.lazy(() =>
-      import("./components/Projects/interviews/Interviews")
+      import("./components/Projects/interviews/LandingPage")
     ),
   },
 ];
