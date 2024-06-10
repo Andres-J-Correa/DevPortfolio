@@ -1,5 +1,3 @@
-import React from "react";
-
 const about = {
   name: "Andres Correa",
   role: "Full Stack Software Developer",
@@ -18,9 +16,6 @@ const projects = [
     stack: ["CSS", "JavaScript", "React"],
     sourceCode: "https://github.com",
     path: "/interviews",
-    component: React.lazy(() =>
-      import("./components/Projects/interviews/LandingPage")
-    ),
   },
 ];
 

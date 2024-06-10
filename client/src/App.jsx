@@ -1,21 +1,20 @@
 import { useState, useEffect, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
-import { projects } from "./portfolio";
+import { pageRoutes } from "./routes";
 import uniqid from "uniqid";
 import "./App.css";
 
 const App = () => {
   const [routes, setRoutes] = useState([]);
 
-  const mapRoutes = (p) => (
-    <Route key={uniqid()} path={p.path} element={<p.component />} />
+  const mapRoutes = (route) => (
+    <Route key={uniqid()} path={route.path} element={<route.component />} />
   );
 
   useEffect(() => {
-    const mappedRoutes = projects.map(mapRoutes);
+    const mappedRoutes = pageRoutes.map(mapRoutes);
 
     setRoutes(mappedRoutes);
   }, []);
@@ -28,10 +27,7 @@ const App = () => {
 
       <main>
         <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route path="" element={<Home />} />
-            {routes}
-          </Routes>
+          <Routes>{routes}</Routes>
         </Suspense>
       </main>
       <Footer />

@@ -1,10 +1,13 @@
 import React from "react";
-import "./interviews.css";
+import { useNavigate } from "react-router-dom";
 import CodeIcon from "@material-ui/icons/Code";
 import StorageIcon from "@material-ui/icons/Storage";
 import LanguageIcon from "@material-ui/icons/Language";
+import "./interviews.css";
 
 const Interviews = () => {
+  const navigate = useNavigate();
+
   const topics = [
     { text: "React", icon: <CodeIcon className="interviews__icon" /> },
     { text: ".Net", icon: <LanguageIcon className="interviews__icon" /> },
@@ -12,8 +15,7 @@ const Interviews = () => {
   ];
 
   const handleBoxClick = (topic) => {
-    console.log(`Selected topic: ${topic}`);
-    // Handle the click event, e.g., navigate to a detailed page or show more info
+    navigate("new", { state: topic.text });
   };
 
   return (
@@ -27,6 +29,7 @@ const Interviews = () => {
             className="interviews__topic"
             onClick={() => handleBoxClick(topic.text)}
             aria-label={topic.text}
+            name={topic.text}
           >
             {topic.icon}
             <h3>{topic.text}</h3>
