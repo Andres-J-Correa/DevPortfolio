@@ -32,15 +32,22 @@ namespace DevPortfolio
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            else
+            {
+                // Add production-specific configurations here
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => {
-
+            app.UseEndpoints(endpoints =>
+            {
                 endpoints.MapControllers();
             });
         }
