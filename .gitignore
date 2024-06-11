@@ -28,4 +28,5 @@
 /client/.vs
 
 # Ignore bin and obj directories
-
+/server/DevPortfolio/obj
+/server/DevPortfolio/bin
