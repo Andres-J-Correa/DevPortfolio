@@ -28,5 +28,4 @@
 /client/.vs
 
 # Ignore bin and obj directories
-/server/bin
-/server/obj
+
