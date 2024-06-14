@@ -33,3 +33,12 @@
 
 # Ignore appSettings
 /server/DevPortfolio/appsettings.Development.json
+
+# Ignore user-specific service dependencies
+/server/DevPortfolio/Properties/serviceDependencies.DevPortfolio20240614070249 - Web Deploy.json.user
+
+# Ignore user-specific project files
+/server/DevPortfolio/DevPortfolio.csproj.user
+
+# Ignore configuration files
+/server/DevPortfolio/.config/
