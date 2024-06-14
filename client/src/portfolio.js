@@ -1,7 +1,7 @@
 const about = {
   name: "Andres Correa",
   role: "Full Stack Software Developer",
-  resume: "/assets/resume.pdf",
+  resume: `${process.env.PUBLIC_URL}/assets/resume.pdf`,
   social: {
     linkedin: "https://www.linkedin.com/in/andres-correa-7aa819244/",
     github: "https://github.com/Andres-J-Correa",
