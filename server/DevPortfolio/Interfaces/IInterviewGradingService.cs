@@ -1,11 +1,11 @@
 ﻿using DevPortfolio.Requests;
 using DevPortfolio.Responses;
 
-namespace DevPortfolio.Config
+namespace DevPortfolio.Interfaces
 {
     public interface IInterviewGradingService
     {
         Task<string> CreatePredictionAsync(QuestionFeedbackRequest request);
-        Task<QuestionFeedbackResponse> GetPredictionStatusAsync(string id);
+        Task<QuestionFeedbackResponse> GetPredictionAsync(string id);
     }
 }

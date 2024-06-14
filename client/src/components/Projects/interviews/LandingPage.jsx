@@ -9,13 +9,17 @@ const Interviews = () => {
   const navigate = useNavigate();
 
   const topics = [
-    { text: "React", icon: <CodeIcon className="interviews__icon" /> },
-    { text: ".Net", icon: <LanguageIcon className="interviews__icon" /> },
-    { text: "SQL", icon: <StorageIcon className="interviews__icon" /> },
+    { id: 1, text: "React", icon: <CodeIcon className="interviews__icon" /> },
+    {
+      id: 2,
+      text: ".Net",
+      icon: <LanguageIcon className="interviews__icon" />,
+    },
+    { id: 3, text: "SQL", icon: <StorageIcon className="interviews__icon" /> },
   ];
 
   const handleBoxClick = (topic) => () => {
-    navigate("new", { state: topic });
+    navigate("new", { state: { ...topic, icon: undefined } });
   };
 
   return (
@@ -27,7 +31,7 @@ const Interviews = () => {
           <div
             key={index}
             className="interviews__topic"
-            onClick={handleBoxClick(topic.text)}
+            onClick={handleBoxClick(topic)}
             aria-label={topic.text}
             name={topic.text}
           >

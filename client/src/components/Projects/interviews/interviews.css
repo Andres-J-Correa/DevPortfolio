@@ -28,6 +28,12 @@
   box-shadow: var(--shadow);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  border-radius: 0.375rem;
+}
+
+.new-interview__chatbox-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .interviews__topic:hover {
@@ -62,6 +68,7 @@
   padding: 16px;
   overflow-y: auto;
   margin-bottom: 16px;
+  border-radius: 0.375rem;
 }
 
 .new-interview__message {
@@ -85,11 +92,11 @@
 }
 
 .new-interview__message-box--user {
-  background-color: #3f51b5;
+  background-color: #434d84;
 }
 
 .new-interview__message-box--ai {
-  background-color: #f50057;
+  background-color: #912048;
 }
 
 .new-interview__input {
@@ -101,7 +108,7 @@
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.375rem;
 }
 
 .new-interview__input button {
@@ -117,4 +124,66 @@
 
 .new-interview__input button:hover {
   background-color: #303f9f;
+}
+
+.react-interview__loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #912048;
+  color: #fff;
+}
+
+.react-interview__loader-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.react-interview__loader-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.react-interview__loader-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.react-interview__loader-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .interviews__grid {
+    display: block;
+  }
+
+  .interviews__topic {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 900px) {
+  .new-interview__chatbox-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

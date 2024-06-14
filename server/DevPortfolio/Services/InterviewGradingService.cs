@@ -1,4 +1,5 @@
-﻿using DevPortfolio.Models;
+﻿using DevPortfolio.Interfaces;
+using DevPortfolio.Models;
 using DevPortfolio.Requests;
 using DevPortfolio.Responses;
 using Microsoft.Extensions.Options;
@@ -31,7 +32,6 @@ namespace DevPortfolio.Config
                 {
                     Temperature = _config.Temperature,
                     NucleusSamplingFactor = _config.NucleusSamplingFactor,
-                    RepetitionPenalty = _config.RepetitionPenalty,
                     MaxTokens = _config.MaxTokens,
                     SystemPrompt = _config.SystemPrompt,
                     UserPrompt = message
@@ -44,7 +44,7 @@ namespace DevPortfolio.Config
 
                 var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(payload), System.Text.Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await _httpClient.PostAsync("https://api.replicate.com/v1/models/meta/llama-2-70b-chat/predictions", content);
+                HttpResponseMessage response = await _httpClient.PostAsync($"{_config.ApiUrl}/{_config.ModelPath}", content);
                 response.EnsureSuccessStatusCode();
 
                 string responseContent = await response.Content.ReadAsStringAsync();
@@ -63,21 +63,37 @@ namespace DevPortfolio.Config
             }
         }
 
-        public async Task<QuestionFeedbackResponse> GetPredictionStatusAsync(string id)
+        public async Task<QuestionFeedbackResponse> GetPredictionAsync(string id)
         {
             try
             {
-                HttpResponseMessage response = await _httpClient.GetAsync($"https://api.replicate.com/v1/predictions/{id}");
+                HttpResponseMessage response = await _httpClient.GetAsync($"{_config.ApiUrl}/predictions/{id}");
                 response.EnsureSuccessStatusCode();
 
                 string responseContent = await response.Content.ReadAsStringAsync();
 
                 QuestionFeedbackResponse gradedResponse = JsonConvert.DeserializeObject<QuestionFeedbackResponse>(responseContent);
 
-                if (gradedResponse.Status == "succeeded")
+                if (gradedResponse == null) {
+
+                    throw new Exception("Error getting prediction");
+                }
+
+                if(gradedResponse.Status == "failed")
                 {
-                    HttpResponseMessage deleteRequest = await _httpClient.GetAsync($"https://api.replicate.com/v1/predictions/{id}/cancel");
-                    deleteRequest.EnsureSuccessStatusCode();
+                    throw new Exception("Error getting prediction");
+                }
+                else if(gradedResponse.Status != "succeeded")
+                {
+                    return null;
+                }
+
+                string gradingResultJsonString = string.Join("", gradedResponse.Output);
+
+                gradedResponse.GradingResult = JsonConvert.DeserializeObject<GradingResult>(gradingResultJsonString);
+
+                if (gradedResponse.GradingResult == null) {
+                    throw new Exception("Error getting prediction");
                 }
 
                 return gradedResponse;

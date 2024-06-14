@@ -1,5 +1,6 @@
-﻿using DevPortfolio.Config;
+﻿using DevPortfolio.Interfaces;
 using DevPortfolio.Requests;
+using DevPortfolio.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevPortfolio.Controllers
@@ -26,18 +27,24 @@ namespace DevPortfolio.Controllers
             }
         }
 
-        [HttpGet("status/{id}")]
-        public async Task<IActionResult> GetPredictionStatus(string id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPrediction(string id)
         {
             try
             {
-                var result = await _replicateService.GetPredictionStatusAsync(id);
+                QuestionFeedbackResponse result = await _replicateService.GetPredictionAsync(id);
+
+                if(result == null)
+                {
+                    return StatusCode(404, "No prediction found");
+                }
+
                 return Ok(result);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.ToString());
-                return StatusCode(500, $"Error creating prediction: {ex.Message}");
+                return StatusCode(500, $"Error getting prediction: {ex.Message}");
             }
         }
     }

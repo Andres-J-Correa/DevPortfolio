@@ -6,12 +6,8 @@ namespace DevPortfolio.Data
 {
     public class ApiContext : DbContext
     {
-
-        public DbSet<InterviewQuestion> Questions { get; set; }
-
-        public ApiContext(DbContextOptions<ApiContext> options):base(options) 
-        {
-            
-        }
+        public ApiContext(DbContextOptions<ApiContext> options) : base(options) { }
+        
+        public DbSet<InterviewQuestion> InterviewQuestions { get; set; }
     }
 }

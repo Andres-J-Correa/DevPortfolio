@@ -13,10 +13,7 @@ namespace DevPortfolio.Models
         [JsonPropertyName("max_new_tokens")]
         public int MaxTokens {  get; set; }
 
-        [JsonPropertyName("repetition_penalty")]
-        public float RepetitionPenalty { get; set; }
-
-        [JsonPropertyName("system_propmt")]
+        [JsonPropertyName("system_prompt")]
         public string SystemPrompt { get; set; } 
 
         [JsonPropertyName("prompt")]
