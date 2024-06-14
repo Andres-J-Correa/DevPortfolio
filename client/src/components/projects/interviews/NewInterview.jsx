@@ -5,7 +5,7 @@ import {
   requestInterviewGrading,
   getInterviewGrading,
 } from "../../../services/interviewsService";
-import toastr from "toastr";
+import { toast } from "react-toastify";
 import "./interviews.css";
 
 const NewInterview = () => {
@@ -118,7 +118,6 @@ const NewInterview = () => {
           text: `I had difficulties analyzing your response, please re-send it.`,
         },
       ]);
-      toastr.error(`Error sending answer. ${err.message}`);
       setLoading(false);
     }
   };
@@ -185,6 +184,7 @@ const NewInterview = () => {
   const fetchInterviewQuestions = useCallback(async () => {
     try {
       if (!!topic?.id) {
+        setLoading(true);
         const res = await getInterviewQuestions(topic.id);
         const interviewQuestions = res.data;
         const firstQuestion = interviewQuestions.pop();
@@ -192,9 +192,11 @@ const NewInterview = () => {
         sendInitialMessages(firstQuestion);
 
         setQuestions(interviewQuestions);
+        setLoading(false);
       }
     } catch (err) {
-      toastr.error(`Error fetching interview questions: ${err.message}`);
+      setLoading(false);
+      toast.error(`Error fetching interview questions. Please try again`);
     }
   }, [topic, sendInitialMessages]);
 

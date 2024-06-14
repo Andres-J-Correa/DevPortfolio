@@ -1,11 +1,14 @@
 import { useState, useEffect, Suspense, useContext } from "react";
+import { Helmet } from "react-helmet";
 import { Routes, Route } from "react-router-dom";
 import { ThemeContext } from "./contexts/theme";
+import { ToastContainer } from "react-toastify";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { pageRoutes } from "./routes";
 import uniqid from "uniqid";
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [routes, setRoutes] = useState([]);
@@ -24,6 +27,9 @@ const App = () => {
 
   return (
     <div id="top" className={`${themeName} app`}>
+      <Helmet>
+        <title>Andres Correa Portfolio</title>
+      </Helmet>
       <header className="header center">
         <Navbar />
       </header>
@@ -34,6 +40,20 @@ const App = () => {
         </Suspense>
       </main>
       <Footer />
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <ToastContainer />
     </div>
   );
 };

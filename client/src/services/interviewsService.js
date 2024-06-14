@@ -1,5 +1,5 @@
 import axios from "axios";
-import toastr from "toastr";
+import { toast } from "react-toastify";
 
 const url = `${process.env.REACT_APP_API_HOST_PREFIX}`;
 const baseConfig = {
@@ -8,7 +8,7 @@ const baseConfig = {
 };
 
 export const getInterviewGrading = async (predictionId) => {
-  const timeOut = 3000;
+  const timeOut = 4000;
   let count = 0,
     interval = 1000,
     maxCount = Math.floor(timeOut / interval),
@@ -24,7 +24,7 @@ export const getInterviewGrading = async (predictionId) => {
     let deferredResponse;
     try {
       if (count % 3 === 0) {
-        toastr.info("Still working on this for you...");
+        toast.info("Still working on this for you...");
       }
       deferredResponse = await axios(config);
       clearInterval(intervalId);
