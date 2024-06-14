@@ -51,7 +51,7 @@ namespace DevPortfolio
                 options.AddPolicy("AllowSpecificOrigins",
                     builder =>
                     {
-                        builder.WithOrigins("https://andres-j-correa.github.io/DevPortfolio/")
+                        builder.WithOrigins("https://andres-j-correa.github.io")
                                .AllowAnyHeader()
                                .AllowAnyMethod()
                                .AllowCredentials();
