@@ -23,6 +23,7 @@ namespace DevPortfolio
             services.AddDbContext<ApiContext>(
                 opt => opt.UseInMemoryDatabase("DevPortfolioDb"));
 
+            services.AddMemoryCache();
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
@@ -94,6 +95,8 @@ namespace DevPortfolio
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<RateLimitingMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

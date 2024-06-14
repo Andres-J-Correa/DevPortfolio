@@ -1,9 +1,9 @@
 import React from "react";
 import About from "./about/About";
-import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skills";
-import Contact from "./Contact/Contact";
-import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import Projects from "./projects/Projects";
+import Skills from "./skills/Skills";
+import Contact from "./contact/Contact";
+import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 function Home() {
   return (

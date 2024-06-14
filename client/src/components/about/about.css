@@ -23,6 +23,7 @@
 
 .about .link--icon {
   margin-right: 0.8em;
+  display: flex;
 }
 
 .about .btn--outline {

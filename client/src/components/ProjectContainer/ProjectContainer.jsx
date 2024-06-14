@@ -6,7 +6,7 @@ import "./projectContainer.css";
 const ProjectContainer = ({ project }) => {
   const navigate = useNavigate();
 
-  const goToProject = () => {
+  const goToProject = (e) => {
     navigate(project.path);
   };
 
@@ -26,13 +26,17 @@ const ProjectContainer = ({ project }) => {
       )}
 
       {project.sourceCode && (
-        <a
-          href={project.sourceCode}
+        <span
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = project.sourceCode;
+          }}
           aria-label="source code"
           className="link link--icon"
         >
           <GitHubIcon />
-        </a>
+        </span>
       )}
     </div>
   );

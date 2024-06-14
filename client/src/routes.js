@@ -8,13 +8,13 @@ export const pageRoutes = [
   {
     path: "/interviews",
     component: lazy(() =>
-      import("./components/Projects/interviews/LandingPage")
+      import("./components/projects/interviews/LandingPage")
     ),
   },
   {
     path: "/interviews/new",
     component: lazy(() =>
-      import("./components/Projects/interviews/NewInterview")
+      import("./components/projects/interviews/NewInterview")
     ),
   },
 ];

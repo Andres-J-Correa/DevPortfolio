@@ -1,13 +1,16 @@
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import { ThemeContext } from "./contexts/theme";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import { pageRoutes } from "./routes";
 import uniqid from "uniqid";
 import "./App.css";
 
 const App = () => {
   const [routes, setRoutes] = useState([]);
+
+  const [{ themeName }] = useContext(ThemeContext);
 
   const mapRoutes = (route) => (
     <Route key={uniqid()} path={route.path} element={<route.component />} />
@@ -20,7 +23,7 @@ const App = () => {
   }, []);
 
   return (
-    <div id="top" className={`dark app`}>
+    <div id="top" className={`${themeName} app`}>
       <header className="header center">
         <Navbar />
       </header>

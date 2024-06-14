@@ -5,6 +5,7 @@
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   cursor: pointer;
+  width: 50%;
 }
 
 .project:hover {
@@ -31,4 +32,10 @@
 
 .project .link--icon {
   margin-left: 0.5em;
+}
+
+@media (max-width: 900px) {
+  .project {
+    width: 100%;
+  }
 }
