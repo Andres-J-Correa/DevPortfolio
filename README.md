@@ -105,6 +105,16 @@ I am a Full Stack Software Engineer and Instructor at Sabio School of Software E
 - **Question Quality Assessment Tool**: Integrated sophisticated AI tools to assess and validate student-submitted questions, significantly improving question quality and reducing instructor workload.
 - **Social Media Content Generator**: Developed advanced prompts to generate social media content from videos, leading to increased customer engagement.
 
+### Coding Time
+
+<div align="center">
+   <a href="https://wakatime.com/@Andres_Correa">
+     <img src="https://wakatime.com/share/@Andres_Correa/ec267326-5a9a-4520-820e-61328902ea63.svg" width="400" height="300" alt="WakaTime Coding Time">
+   </a>
+</div>
+
+![WakaTime Stats](https://wakatime.com/share/@Andres_Correa/df175bdb-d67e-4a73-b859-cd60e8ffe030.svg)
+
 ## Contact
 
 Feel free to reach out to me for any queries or collaboration opportunities:
