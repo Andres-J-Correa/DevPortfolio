@@ -154,16 +154,15 @@ const NewInterview = () => {
 
   const sendInitialMessages = useCallback(
     (firstQuestion) => {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        {
+          sender: "ai",
+          text: `Welcome to the ${topic.text} interview. During this session, I will ask you five technical questions. Please respond to each question to the best of your ability. At the end of the interview, I will provide you with your final grade. Let's get started with the first question:`,
+        },
+      ]);
+
       setLoading(true);
-      setTimeout(() => {
-        setMessages((prevMessages) => [
-          ...prevMessages,
-          {
-            sender: "ai",
-            text: `Welcome to the ${topic.text} interview. During this session, I will ask you five technical questions. Please respond to each question to the best of your ability. At the end of the interview, I will provide you with your final grade. Let's get started with the first question:`,
-          },
-        ]);
-      }, 1000);
 
       setTimeout(() => {
         setMessages((prevMessages) => [
@@ -187,12 +186,16 @@ const NewInterview = () => {
         setLoading(true);
         const res = await getInterviewQuestions(topic.id);
         const interviewQuestions = res.data;
+
+        if (!interviewQuestions?.length) {
+          throw new Error("No questions found.");
+        }
+
         const firstQuestion = interviewQuestions.pop();
 
-        sendInitialMessages(firstQuestion);
-
-        setQuestions(interviewQuestions);
         setLoading(false);
+        sendInitialMessages(firstQuestion);
+        setQuestions(interviewQuestions);
       }
     } catch (err) {
       setLoading(false);

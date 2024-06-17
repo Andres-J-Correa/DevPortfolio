@@ -4,12 +4,12 @@ Welcome! This web application contains all my projects, currently hosting an Int
 
 ## Preview
 
-<a href="https://github.com/Andres-J-Correa/DevPortfolio"><p align="center">
+<div align="center">
+<a href="https://andres-j-correa.github.io/DevPortfolio">
+
 <img height="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3RvMmJ4czVna2hzbjRkMDdhbXlkdTFpOXFvdzFmMTFxaXBzbXY2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cQPHTkhRtcmFswwly0/giphy.gif">
-
-</p></a>
-
-[Live Demo](https://andres-j-correa.github.io/DevPortfolio)
+</a>
+</div>
 
 ## Table of Contents
 
