@@ -107,11 +107,7 @@ I am a Full Stack Software Engineer and Instructor at Sabio School of Software E
 
 ### Coding Time
 
-<div align="center">
-   <a href="https://wakatime.com/@Andres_Correa">
-     <img src="https://wakatime.com/share/@Andres_Correa/ec267326-5a9a-4520-820e-61328902ea63.svg" width="400" height="300" alt="WakaTime Coding Time">
-   </a>
-</div>
+[![wakatime](https://wakatime.com/badge/user/b7c5c2d6-968c-47f7-89ed-42fd86301a12.svg)](https://wakatime.com/@b7c5c2d6-968c-47f7-89ed-42fd86301a12)
 
 ![WakaTime Stats](https://wakatime.com/share/@Andres_Correa/df175bdb-d67e-4a73-b859-cd60e8ffe030.svg)
 
