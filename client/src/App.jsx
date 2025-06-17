@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import { Routes, Route } from "react-router-dom";
 import { ThemeContext } from "./contexts/theme";
 import { ToastContainer } from "react-toastify";
-import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { pageRoutes } from "./routes";
 import uniqid from "uniqid";
@@ -39,7 +38,6 @@ const App = () => {
           <Routes>{routes}</Routes>
         </Suspense>
       </main>
-      <Footer />
 
       <ToastContainer
         position="top-right"
