@@ -1,7 +1,6 @@
 # Coding Portfolio
 
-Welcome! This web application contains all my projects, currently hosting an Interview Practice App, designed to help users practice interview questions based on their chosen topic: React, .NET, or SQL. The app features a chat bot-like UI, providing an engaging and interactive experience for interview preparation.
-
+Welcome! This web application contains all my projects.
 ## Preview
 
 <div align="center">
