@@ -1,15 +1,8 @@
 # Coding Portfolio
 
-Welcome! This web application contains all my projects, currently hosting an Interview Practice App, designed to help users practice interview questions based on their chosen topic: React, .NET, or SQL. The app features a chat bot-like UI, providing an engaging and interactive experience for interview preparation.
+Welcome! This web application contains all my projects.
 
-## Preview
-
-<div align="center">
-<a href="https://andres-j-correa.github.io/DevPortfolio">
-
-<img height="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3RvMmJ4czVna2hzbjRkMDdhbXlkdTFpOXFvdzFmMTFxaXBzbXY2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cQPHTkhRtcmFswwly0/giphy.gif">
-</a>
-</div>
+## [GO TO PORTFOLIO](https://andres-j-correa.github.io/DevPortfolio)
 
 ## Table of Contents
 
@@ -37,8 +30,8 @@ I am a Full Stack Software Engineer and Instructor at Sabio School of Software E
 Feel free to reach out to me for any queries or collaboration opportunities:
 
 - Email: andresj.correas@gmail.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/andres-correa-7aa819244/)
-- GitHub: [Your GitHub Profile](https://github.com/Andres-J-Correa)
+- LinkedIn: [Go to LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
+- GitHub: [Go to GitHub](https://github.com/Andres-J-Correa)
 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
