@@ -8,6 +8,7 @@ import { pageRoutes } from "./routes";
 import uniqid from "uniqid";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const [routes, setRoutes] = useState([]);
@@ -38,6 +39,8 @@ const App = () => {
           <Routes>{routes}</Routes>
         </Suspense>
       </main>
+
+      <Footer />
 
       <ToastContainer
         position="top-right"

@@ -2,6 +2,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { about } from "../../portfolio";
 import "./about.css";
+import Contact from "../contact/Contact";
 
 const About = () => {
   const { name, role, resume, social } = about;
@@ -17,22 +18,13 @@ const About = () => {
       {role && <h2 className="about__role">A {role}.</h2>}
 
       <div className="about__contact center">
-        {resume && (
-          <a href={resume} download="resume.pdf">
-            <span type="button" className="btn btn--outline">
-              Resume
-            </span>
-          </a>
-        )}
-
         {social && (
           <>
             {social.github && (
               <a
                 href={social.github}
                 aria-label="github"
-                className="link link--icon"
-              >
+                className="link link--icon">
                 <GitHubIcon />
               </a>
             )}
@@ -41,14 +33,35 @@ const About = () => {
               <a
                 href={social.linkedin}
                 aria-label="linkedin"
-                className="link link--icon"
-              >
+                className="link link--icon">
                 <LinkedInIcon />
               </a>
             )}
+
+            {resume && (
+              <a href={resume} download="andres-resume.pdf">
+                <span
+                  type="button"
+                  className="btn btn--outline"
+                  style={{ borderRadius: ".375rem" }}>
+                  Resume
+                </span>
+              </a>
+            )}
+            <Contact />
           </>
         )}
       </div>
+      <a
+        href="https://wakatime.com/@b7c5c2d6-968c-47f7-89ed-42fd86301a12"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginTop: "20px" }}>
+        <img
+          src="https://wakatime.com/badge/user/b7c5c2d6-968c-47f7-89ed-42fd86301a12.svg"
+          alt="Total time coded since Dec 3 2022"
+        />
+      </a>
     </div>
   );
 };

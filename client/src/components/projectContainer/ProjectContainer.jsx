@@ -7,7 +7,11 @@ const ProjectContainer = ({ project }) => {
   const navigate = useNavigate();
 
   const goToProject = (e) => {
-    navigate(project.path);
+    if (project.path) {
+      navigate(project.path);
+    } else if (project.link) {
+      window.open(project.link, "_blank", "noopener,noreferrer");
+    }
   };
 
   return (
@@ -33,8 +37,7 @@ const ProjectContainer = ({ project }) => {
             window.location.href = project.sourceCode;
           }}
           aria-label="source code"
-          className="link link--icon"
-        >
+          className="link link--icon">
           <GitHubIcon />
         </span>
       )}
