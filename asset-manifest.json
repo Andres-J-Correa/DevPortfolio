@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/DevPortfolio/static/css/main.c28b5844.css",
-    "main.js": "/DevPortfolio/static/js/main.c837face.js",
-    "static/css/894.ce870d0c.chunk.css": "/DevPortfolio/static/css/894.ce870d0c.chunk.css",
-    "static/js/894.720d3e34.chunk.js": "/DevPortfolio/static/js/894.720d3e34.chunk.js",
+    "main.css": "/DevPortfolio/static/css/main.911647d1.css",
+    "main.js": "/DevPortfolio/static/js/main.721ca873.js",
+    "static/css/894.f813b1d7.chunk.css": "/DevPortfolio/static/css/894.f813b1d7.chunk.css",
+    "static/js/894.490bac50.chunk.js": "/DevPortfolio/static/js/894.490bac50.chunk.js",
     "static/css/131.c3853bb5.chunk.css": "/DevPortfolio/static/css/131.c3853bb5.chunk.css",
     "static/js/131.d953a212.chunk.js": "/DevPortfolio/static/js/131.d953a212.chunk.js",
     "static/css/528.c3853bb5.chunk.css": "/DevPortfolio/static/css/528.c3853bb5.chunk.css",
@@ -11,10 +11,10 @@
     "static/js/453.fcd16fc6.chunk.js": "/DevPortfolio/static/js/453.fcd16fc6.chunk.js",
     "static/js/722.5fd29277.chunk.js": "/DevPortfolio/static/js/722.5fd29277.chunk.js",
     "index.html": "/DevPortfolio/index.html",
-    "main.c28b5844.css.map": "/DevPortfolio/static/css/main.c28b5844.css.map",
-    "main.c837face.js.map": "/DevPortfolio/static/js/main.c837face.js.map",
-    "894.ce870d0c.chunk.css.map": "/DevPortfolio/static/css/894.ce870d0c.chunk.css.map",
-    "894.720d3e34.chunk.js.map": "/DevPortfolio/static/js/894.720d3e34.chunk.js.map",
+    "main.911647d1.css.map": "/DevPortfolio/static/css/main.911647d1.css.map",
+    "main.721ca873.js.map": "/DevPortfolio/static/js/main.721ca873.js.map",
+    "894.f813b1d7.chunk.css.map": "/DevPortfolio/static/css/894.f813b1d7.chunk.css.map",
+    "894.490bac50.chunk.js.map": "/DevPortfolio/static/js/894.490bac50.chunk.js.map",
     "131.c3853bb5.chunk.css.map": "/DevPortfolio/static/css/131.c3853bb5.chunk.css.map",
     "131.d953a212.chunk.js.map": "/DevPortfolio/static/js/131.d953a212.chunk.js.map",
     "528.c3853bb5.chunk.css.map": "/DevPortfolio/static/css/528.c3853bb5.chunk.css.map",
@@ -23,7 +23,7 @@
     "722.5fd29277.chunk.js.map": "/DevPortfolio/static/js/722.5fd29277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c28b5844.css",
-    "static/js/main.c837face.js"
+    "static/css/main.911647d1.css",
+    "static/js/main.721ca873.js"
   ]
 }
