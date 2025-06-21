@@ -1,8 +1,15 @@
-Hello I'm Andres, a full stack developer.
+# Coding Portfolio
 
-## [See my porftolio](https://andres-j-correa.github.io/DevPortfolio)
+Welcome! This web application contains all my projects.
 
-## About Me
+## [GO TO PORTFOLIO](https://andres-j-correa.github.io/DevPortfolio)
+
+## Table of Contents
+
+- [About Me](#about-me)
+- [Contact](#contact)
+
+- ## About Me
 
 I am a Full Stack Software Engineer and Instructor at Sabio School of Software Engineering with extensive experience in building comprehensive modules for React.js, JavaScript, .NET, C#, SQL, and Python. I am adept at integrating AI functionalities into web applications, optimizing database performance, and crafting user-friendly interfaces.
 
@@ -23,5 +30,12 @@ I am a Full Stack Software Engineer and Instructor at Sabio School of Software E
 Feel free to reach out to me for any queries or collaboration opportunities:
 
 - Email: andresj.correas@gmail.com
-- [LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
+- LinkedIn: [Go to LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
+- GitHub: [Go to GitHub](https://github.com/Andres-J-Correa)
 
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+This project was created using [rjshkhr's cleanfolio](https://github.com/rjshkhr/cleanfolio) as template.
