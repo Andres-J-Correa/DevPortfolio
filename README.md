@@ -23,6 +23,6 @@ I am a Full Stack Software Engineer and Instructor at Sabio School of Software E
 Feel free to reach out to me for any queries or collaboration opportunities:
 
 - Email: andresj.correas@gmail.com
-- LinkedIn: [Go to LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
-- GitHub: [Go to GitHub](https://github.com/Andres-J-Correa)
+- [LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
+- [GitHub](https://github.com/Andres-J-Correa)
 
