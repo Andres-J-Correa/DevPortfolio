@@ -24,5 +24,4 @@ Feel free to reach out to me for any queries or collaboration opportunities:
 
 - Email: andresj.correas@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
-- [GitHub](https://github.com/Andres-J-Correa)
 
