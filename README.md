@@ -1,13 +1,6 @@
-# Coding Portfolio
+Hello I'm Andres, a full stack developer.
 
-Welcome! This web application contains all my projects.
-
-## [GO TO PORTFOLIO](https://andres-j-correa.github.io/DevPortfolio)
-
-## Table of Contents
-
-- [About Me](#about-me)
-- [Contact](#contact)
+## [See my porftolio](https://andres-j-correa.github.io/DevPortfolio)
 
 - ## About Me
 
@@ -33,9 +26,3 @@ Feel free to reach out to me for any queries or collaboration opportunities:
 - LinkedIn: [Go to LinkedIn](https://www.linkedin.com/in/andres-correa-7aa819244/)
 - GitHub: [Go to GitHub](https://github.com/Andres-J-Correa)
 
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Credits
-
-This project was created using [rjshkhr's cleanfolio](https://github.com/rjshkhr/cleanfolio) as template.
