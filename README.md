@@ -2,7 +2,7 @@ Hello I'm Andres, a full stack developer.
 
 ## [See my porftolio](https://andres-j-correa.github.io/DevPortfolio)
 
-- ## About Me
+## About Me
 
 I am a Full Stack Software Engineer and Instructor at Sabio School of Software Engineering with extensive experience in building comprehensive modules for React.js, JavaScript, .NET, C#, SQL, and Python. I am adept at integrating AI functionalities into web applications, optimizing database performance, and crafting user-friendly interfaces.
 
