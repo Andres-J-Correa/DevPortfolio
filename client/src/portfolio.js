@@ -48,7 +48,7 @@ const skills = {
     "Responsive Design",
   ],
   backend: ["Node.js", "C#", ".Net Core", "ASP.NET Web API", "REST APIs"],
-  databases: ["SQL", "Relational Databases", "MySQL", "MariaDb", "SSMS"],
+  databases: ["SQL", "Relational Databases", "MySQL", "MariaDb"],
   cloudAndDevOps: ["Azure", "AWS", "VPS Management", "CI/CD", "GitHub Actions"],
   testing: ["Jest", "xUnit"],
   aiAndML: ["OpenAI API", "Llama", "Prompt Engineering"],
