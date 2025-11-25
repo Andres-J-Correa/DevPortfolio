@@ -9,6 +9,7 @@
 
 .skills__list-item {
   margin: 0.5em;
+  border-radius: 5px;
 }
 
 .skills__category-title {

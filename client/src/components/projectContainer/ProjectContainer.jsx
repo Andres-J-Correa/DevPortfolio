@@ -15,7 +15,10 @@ const ProjectContainer = ({ project }) => {
   };
 
   return (
-    <div className="project" onClick={goToProject}>
+    <div
+      className="project"
+      onClick={goToProject}
+      title={`Visit ${project.name}`}>
       <h3>{project.name}</h3>
 
       <p className="project__description">{project.description}</p>
