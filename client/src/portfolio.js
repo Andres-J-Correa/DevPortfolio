@@ -32,7 +32,7 @@ const projects = [
       "Responsive Design",
       "Internationalization (i18n)",
     ],
-    link: "https://www.tourgo.space",
+    link: "https://tourgo.space",
   },
   {
     name: "ForexFinder",
