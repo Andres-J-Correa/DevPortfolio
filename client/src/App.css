@@ -122,6 +122,12 @@ main {
   right: 0;
 }
 
+.btn--sm {
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+}
+
 .btn--plain {
   text-transform: initial;
   background-color: var(--clr-bg-alt);

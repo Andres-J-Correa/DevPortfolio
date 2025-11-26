@@ -43,13 +43,11 @@ const About = () => {
             )}
 
             {resume && (
-              <a href={resume} download="andres-resume.pdf">
-                <span
-                  type="button"
-                  className="btn btn--outline"
-                  style={{ borderRadius: ".375rem" }}>
-                  Resume
-                </span>
+              <a
+                href={resume}
+                download="andres-resume.pdf"
+                className="btn btn--outline btn--sm">
+                Resume
               </a>
             )}
             <Contact />
