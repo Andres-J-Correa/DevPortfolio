@@ -32,7 +32,7 @@ const projects = [
       "Responsive Design",
       "Internationalization (i18n)",
     ],
-    link: "https://tourgo.space",
+    link: "https://tourgo.cloud",
   },
   {
     name: "ForexFinder",
@@ -56,7 +56,7 @@ const projects = [
       "Docker",
       "GitHub Actions",
     ],
-    link: "https://forexfinder.tourgo.space/",
+    link: "https://apkpure.com/forexfinder/com.andres_dev94.ForexFinder",
   },
 ];
 
